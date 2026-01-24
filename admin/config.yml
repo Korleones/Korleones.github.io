@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Korleones/Korleones.github.io
+  branch: master
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "language_log"
+    label: "语言交换日志"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-language-exchange"
+    fields:
+      - { label: "Title", name: "title", widget: "string", default: "Language Exchange Log" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cantonese Today (今日粤语)", name: "cantonese", widget: "list", summary: "{{item.word}}" }
+      - { label: "Japanese/Shanghainese (对应日/沪语)", name: "translation", widget: "string" }
+      - { label: "Detailed Notes (详细笔记)", name: "body", widget: "markdown" }
