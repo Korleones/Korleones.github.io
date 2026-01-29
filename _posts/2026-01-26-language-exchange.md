@@ -19,7 +19,7 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | :--- | :--- | :--- | :--- |
 | M-goi 唔该 | m4 goi1 | Thank you / Excuse me | Service-related scenarios |
 | Bin-dou 边度| bin1 dou6 | Where? | Asking for directions |
-| Ho-sai-lei 好犀利 (猴赛雷) | hou2 sai3 leoi6 | Incredible / Awesome | High praise for great work |
+| Ho-sai-lei 好犀利 (猴赛雷雷) | hou2 sai3 leoi6 | Incredible / Awesome | High praise for great work |
 | Jo-san 早晨| zou2 san4 | Good morning | The most standard and common morning greeting. |
 |Zok-jat 昨日| zok6 jat6 | Yesterday | Referring to the previous day.
 |Gam-jat 今日| gam1 jat6 | Today | Referring to the current day.
