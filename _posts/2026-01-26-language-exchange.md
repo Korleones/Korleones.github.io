@@ -51,6 +51,13 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **Sin-sang 先生** | sin1 saang1 | Mr. / Gentleman | Formal address for a man. |
 | **Siu-ze 小姐** | siu2 ze2 | Ms. / Lady | Formal address for a woman. |
 
+### 🇯🇵 Japanese Module
+
+| Vocabulary | Romanization | Meaning | Context |
+| :--- | :--- | :--- | :--- |
+| こんにちは | Konnichiwa | Hello | Standard greeting. |
+| ありがとう | Arigatou | Thank you | Informal way to say thanks. |
+
 ---
 <br>
 
