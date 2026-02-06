@@ -36,13 +36,46 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 
 ### 🏙️ Shanghainese
 
-
 | Vocabulary / Phrase | Romanization | Meaning | Context & Logic |
 | :--- | :--- | :--- | :--- |
 | **顺风车** | zen fong cu | Hitch a ride / Carpool | 现代上海话直接发音，"zen" 对应顺，"fong" 对应风，"cu" 对应车。 |
 | **轮船** | len zoe | Ship / Steamboat | 上海话发音，"leng" 对应轮，"zei" 对应船。 |
 | **侬耳朵当八折** | nong ni du dang ba za | Are your ears only working at 80%? | **Logic:** Teasing someone for not listening carefully or mishearing things. |
 | **退招势** | te zao si | Showy / Pretentious | 太丢脸 |
+
+### 📖 Root Analysis 
+
+#### 1. Root: -CUR- / -COURS-
+* **Etymology:** Derived from Latin *currere*, meaning **"To run / To flow"**.
+* **Engineering Intuition:** Visualize the "Execution Flow" of code or the "Data Stream" moving through a system.
+
+| Word | Morphological Breakdown | Definition (CS/Technical Context) | Typical Application |
+| :--- | :--- | :--- | :--- |
+| **Current** | `cur` (run/flow) + `ent` (adj. suffix) | **Present; Ongoing** | `Current branch` (The branch you are currently working on). |
+| **Concurrent** | `con` (together) + `cur` (run) | **Running together / Parallel** | `Concurrency` in C++, referring to multiple threads running simultaneously. |
+| **Recursion** | `re` (back) + `cur` (run) | **Running back to itself** | A function that calls itself until a base case is met. |
+| **Cursor** | `curs` (run) + `or` (agent/tool) | **The runner/indicator** | The indicator on a screen that "runs" to a specific position. |
+| **Course** | `cours` (flow) | **Path / Direction** | The path of a process or a series of lectures (a "study path"). |
+| **Occur** | `oc` (toward) + `cur` (run) | **To run into / To happen** | `An error occurred`: An event that ran into the program's execution flow. |
+| **Precursor** | `pre` (before) + `cur` (run) | **Forerunner** | A state or event that "runs before" another (a prerequisite). |
+
+---
+
+#### 2. Root: -PON- / -POS- / -POUND-
+
+* **Etymology:** Derived from Latin *ponere*, meaning **"To put / To place / To set"**.
+* **Engineering Intuition:** Visualize "Setting a state," "Storing assets," or "Placing components" into a architecture.
+
+| Word | Morphological Breakdown | Definition (CS/Technical Context) | Typical Application |
+| :--- | :--- | :--- | :--- |
+| **Repository** | `re` (back/store) + `pos` (place) | **A place where things are stored** | `Git Repo`: The physical/logical location where code assets are placed. |
+| **Component** | `com` (together) + `pon` (put) | **A part placed together with others** | Reusable UI `Components` in your Jekyll site or software modules. |
+| **Compose** | `com` (together) + `pos` (put) | **To put together / To construct** | `Docker Compose`: Putting multiple containers together to run as a service. |
+| **Position** | `pos` (place) + `ition` (noun suffix) | **The location of an object** | The index or memory address where a data element is "placed." |
+| **Deposit** | `de` (down) + `pos` (place) | **To put down / To store** | Placing money into a bank or "depositing" data into a database. |
+| **Postpone** | `post` (after) + `pon` (put) | **To put off until later** | Moving a task or a meeting to a later "place" on the timeline. |
+| **Compound** | `com` (together) + `pound` (put) | **To put together / Complex** | `Compound Interest`: Interest placed on top of interest. |
+| **Oppose** | `op` (against) + `pos` (place) | **To place against** | To set a different view or value against the current one. |
 
 ---
 <br>
