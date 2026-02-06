@@ -50,18 +50,23 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **Eng-man meng 英文名** | jing1 man4 meng2 | English name | Referring to your English name (e.g., Di). |
 | **Sin-sang 先生** | sin1 saang1 | Mr. / Gentleman | Formal address for a man. |
 | **Siu-ze 小姐** | siu2 ze2 | Ms. / Lady | Formal address for a woman. |
+---
 
-### 🇯🇵 Japanese Module
+### 🇯🇵 Japanese Module (日本語)
 
 | Vocabulary | Romanization | Meaning | Context |
 | :--- | :--- | :--- | :--- |
-| こんにちは | Konnichiwa | Hello | Standard greeting. |
-| ありがとう | Arigatou | Thank you | Informal way to say thanks. |
-| 元気ですね | Genki desu ne | You are energetic / How are you? | A friendly greeting or observation. |
-| せんせい | Sensei | Teacher / Master | Used for teachers, doctors, or experts. |
-| 集中して勉強しています | Shuuchuu shite benkyou shite imasu | I am studying with focus | "Shuuchuu" means concentration. |
-| なるほど | Naruhodo | I see / Indeed | Used when you understand something new. |
-| ご饭にする？ | Gohan ni suru? | Shall we eat? / Are you having a meal? | Informal way to suggest eating. |
+| **よろしくお願いします** | Yoroshiku onegaishimasu | Nice to meet you / I'm in your hands | Used when starting a project or asking a favor. |
+| **こんにちは** | Konnichiwa | Hello | Standard greeting. |
+| **ありがとう** | Arigatou | Thank you | Informal way to say thanks. |
+| **元気ですね** | Genki desu ne | You are energetic / How are you? | A friendly greeting or observation. |
+| **せんせい** | Sensei | Teacher / Master | Used for teachers, doctors, or experts. |
+| **集中して勉強しています** | Shuuchuu shite benkyou shite imasu | I am studying with focus | "Shuuchuu" means concentration. |
+| **なるほど** | Naruhodo | I see / Indeed | Used when you understand something new. |
+| **ご飯にする？** | Gohan ni suru? | Shall we eat? | Informal way to suggest eating. |
+| **お疲れ様です** | Otsukaresama desu | Good job / Thanks for your hard work | Very common in work or collaboration. |
+
+---
 
 ---
 <br>
