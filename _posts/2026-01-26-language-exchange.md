@@ -57,6 +57,11 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | :--- | :--- | :--- | :--- |
 | こんにちは | Konnichiwa | Hello | Standard greeting. |
 | ありがとう | Arigatou | Thank you | Informal way to say thanks. |
+| 元気ですね | Genki desu ne | You are energetic / How are you? | A friendly greeting or observation. |
+| せんせい | Sensei | Teacher / Master | Used for teachers, doctors, or experts. |
+| 集中して勉強しています | Shuuchuu shite benkyou shite imasu | I am studying with focus | "Shuuchuu" means concentration. |
+| なるほど | Naruhodo | I see / Indeed | Used when you understand something new. |
+| ご饭にする？ | Gohan ni suru? | Shall we eat? / Are you having a meal? | Informal way to suggest eating. |
 
 ---
 <br>
