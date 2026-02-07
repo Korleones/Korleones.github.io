@@ -22,6 +22,7 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **好攰** | hou2 gui6 | So exhausted | Used to express physical or mental tiredness. "I'm so spent after coding all day." |
 | **好嬲** | hou2 nau1 | So angry | Used when you are mad or pissed off. Note: The character "嬲" specifically means angry in Cantonese. |
 | **好叻** | hou2 lek1 | So smart / Capable | A common compliment for someone who is brilliant, talented, or has done a great job. |
+| **心水** | sam1 seoi2 | Favorite / Preferred | 心头好、中意的东西 |
 
 
 ### 🇯🇵 Japanese module
@@ -42,6 +43,7 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **轮船** | len zoe | Ship / Steamboat | 上海话发音，"leng" 对应轮，"zei" 对应船。 |
 | **侬耳朵当八折** | nong ni du dang ba za | Are your ears only working at 80%? | **Logic:** Teasing someone for not listening carefully or mishearing things. |
 | **退招势** | te zao si | Showy / Pretentious | 太丢脸 |
+| **出外快** | ca nga kuai | Hit the mark by a fluke | 歪打正着、意外收获 |
 
 ### 📖 Root Analysis 
 
