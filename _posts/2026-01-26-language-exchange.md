@@ -23,6 +23,7 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **好嬲** | hou2 nau1 | So angry | Used when you are mad or pissed off. Note: The character "嬲" specifically means angry in Cantonese. |
 | **好叻** | hou2 lek1 | So smart / Capable | A common compliment for someone who is brilliant, talented, or has done a great job. |
 | **心水** | sam1 seoi2 | Favorite / Preferred | 心头好、中意的东西 |
+| **扮嘢** | baan6 je5 | To show off / To pretend | 装模作样、摆谱 |
 
 
 ### 🇯🇵 Japanese module
@@ -44,6 +45,7 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **侬耳朵当八折** | nong ni du dang ba za | Are your ears only working at 80%? | **Logic:** Teasing someone for not listening carefully or mishearing things. |
 | **退招势** | te zao si | Showy / Pretentious | 太丢脸 |
 | **出外快** | ca nga kuai | Hit the mark by a fluke | 歪打正着、意外收获 |
+| **辣手** | laq siu | Tough / Cruel / Tricky | 棘手、厉害、手段狠毒 |
 
 ### 📖 Root Analysis 
 
@@ -112,6 +114,7 @@ This is a blog to track the learning path for me and Holly, who are eager to ref
 | **Zau-sin 走先** | zau2 sin1 | Leaving now | Said when you leave a group or the office. |
 | **Coi-can 踩亲** | caai2 can1 | Stepped on | Said when you step on something accidentally |
 | **Baak-caat 爆擦** | baau3 caat3 | Chapped | cracked when lips get dry |
+
 
 | Vocabulary / Phrase | Romanization (Jyutping) | Meaning | Context / Usage |
 | :--- | :--- | :--- | :--- |
