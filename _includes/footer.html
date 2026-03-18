@@ -16,22 +16,8 @@
       font-size: 0.86rem;
     }
 
-    .footer-mini-links {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-    }
-
-    .footer-mini-links a {
+    .footer-mini-note {
       color: #526084;
-      text-decoration: none;
-    }
-
-    .footer-mini-links a:hover {
-      color: #314b95;
     }
 
     @media (max-width: 640px) {
@@ -43,13 +29,6 @@
 
   <div class="wrapper footer-mini">
     <div>© {{ "now" | date: "%Y" }} {{ site.title | escape }} · Built with Jekyll</div>
-    <ul class="footer-mini-links">
-      <li><a href="{{ '/works/' | relative_url }}">Works</a></li>
-      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-      {%- if site.email -%}
-        <li><a class="u-email" href="mailto:{{ site.email }}">Email</a></li>
-      {%- endif -%}
-    </ul>
+    <div class="footer-mini-note">Can you guess what the browser tab icon is?</div>
   </div>
 </footer>

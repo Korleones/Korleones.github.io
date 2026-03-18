@@ -346,7 +346,7 @@ layout: default
 
     <div class="home-right-stack">
       <section class="home-hero">
-        <h1>{{ page.title | default: site.title }}</h1>
+        <h1>{{ page.hero_title | default: page.title | default: site.title }}</h1>
         <p class="subtitle">{{ page.subtitle | default: site.description }}</p>
         <div class="home-tagline">{{ page.tagline | default: "Personal site · Engineering notes · Creative experiments" }}</div>
       </section>
