@@ -1,0 +1,11 @@
+comments:
+  allowedFields: ["name", "email", "message", "avatar"]
+  branch: main
+  commitMessage: "New comment from {name}"
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  moderation: false
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "message"]
+  reCaptcha:
+    enabled: false

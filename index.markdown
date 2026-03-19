@@ -2,8 +2,16 @@
 layout: home
 title: "Di's playground"
 hero_title: "Hi, I'm Di"
-subtitle: "UNSW Computer Engineering · Game R&D Enthusiast"
-tagline: "Building playful and practical things, one experiment at a time."
+subtitle: |
+  Software Engineer
+  Indie Game Developer
+  🇦🇺UNSW MIT-AI
+  🇨🇳SHU BEng-CS
+  🏀 🎱 🎮 🏋️ 🏸 🤔
+  📧: dikan@duck.com
+
+
+tagline: "Though the guidance be broken long ago, become the Elden Lord."
 gallery_title: "My Photos"
 works_title: "Selected Works"
 status_title: "Now"
@@ -26,18 +34,17 @@ now:
   - "Writing short technical notes every week."
 now_footer: "Always learning, always shipping small things."
 gallery_images:
-  - src: /assets/images/gallery-1.svg
-    alt: Gallery image 1
-    caption: "Put your own image files in assets/images, then update the src path here."
-  - src: /assets/images/gallery-2.svg
-    alt: Gallery image 2
-    caption: "Use the left and right arrows to switch photos."
-  - src: /assets/images/gallery-3.svg
-    alt: Gallery image 3
-    caption: "This is a temporary placeholder image."
+  - src: /assets/images/IMG_6255.JPG
+    alt: Personal photo 1
+    caption: "Casual snapshot."
+  - src: /assets/images/0f9c2ed025204e88405055a9826a0164.JPG
+    alt: Personal photo 2
+    caption: "Hiking on the glacier in New Zealand"
+  - src: /assets/images/1b253dc73f8d31093d421111177677d4.JPG
+    alt: Personal photo 3
+    caption: "In Blue Mountains, Sydney"
 ---
 Welcome to my personal website. I use this space to share:
-
-- Study notes (IELTS / Tech)
-- Life stories and experiences
-- Small projects and ideas
+- Life stories and experiences 🤣
+- Small projects and ideas 🌟
+- A place to fiddle 🎮
