@@ -11,7 +11,6 @@ subtitle: |
   📧: dikan@duck.com
 
 
-tagline: "Though the guidance be broken long ago, become the Elden Lord."
 gallery_title: "My Photos"
 works_title: "Selected Works"
 status_title: "Now"
@@ -44,7 +43,9 @@ gallery_images:
     alt: Personal photo 3
     caption: "In Blue Mountains, Sydney"
 ---
-Welcome to my personal website. I use this space to share:
-- Life stories and experiences 🤣
-- Small projects and ideas 🌟
-- A place to fiddle 🎮
+Welcome to my personal website. I use this space:
+- To share Life stories and experiences 🤣
+- To write down Small projects and ideas 🌟
+- To realize what I really want to do ❤️
+- As a place for me to fiddle 🎮
+

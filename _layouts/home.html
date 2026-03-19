@@ -13,22 +13,69 @@ layout: default
 
   .home-custom {
     display: grid;
-    gap: 1.4rem;
+    gap: 1rem;
   }
 
   .home-intro-grid {
-    margin-top: 1.1rem;
+    margin-top: 0.8rem;
     display: grid;
     grid-template-columns: 320px 1fr;
-    gap: 1rem;
+    gap: 0.85rem;
     align-items: stretch;
   }
 
   .home-hero {
-    padding: 2.6rem 2.4rem;
+    padding: 2rem 1.9rem;
     border-radius: 16px;
-    border: 1px solid #e7eaf2;
-    background: radial-gradient(circle at 90% 20%, #eef2ff 0%, #f8f9fc 34%, #ffffff 80%);
+    border: 1px solid #dfe6ff;
+    background:
+      radial-gradient(120% 140% at 100% 0%, rgba(120, 138, 255, 0.24) 0%, rgba(120, 138, 255, 0.08) 28%, rgba(120, 138, 255, 0) 58%),
+      radial-gradient(90% 110% at -10% 100%, rgba(103, 227, 255, 0.16) 0%, rgba(103, 227, 255, 0) 55%),
+      linear-gradient(140deg, #fbfcff 0%, #f4f7ff 46%, #ffffff 100%);
+    box-shadow:
+      0 12px 28px rgba(47, 64, 132, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  }
+
+  .home-hero::before,
+  .home-hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(2px);
+  }
+
+  .home-hero::before {
+    width: 300px;
+    height: 300px;
+    right: -110px;
+    top: -120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(132, 149, 255, 0.42) 0%, rgba(132, 149, 255, 0.1) 38%, rgba(132, 149, 255, 0) 70%);
+    animation: heroAurora 9s ease-in-out infinite alternate;
+  }
+
+  .home-hero::after {
+    width: 220px;
+    height: 220px;
+    left: -80px;
+    bottom: -120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(84, 228, 255, 0.26) 0%, rgba(84, 228, 255, 0.08) 36%, rgba(84, 228, 255, 0) 72%);
+    animation: heroAurora 12s ease-in-out infinite alternate-reverse;
+  }
+
+  .home-hero:hover {
+    transform: translateY(-1px);
+    border-color: #cfd8ff;
+    box-shadow:
+      0 16px 34px rgba(47, 64, 132, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.82);
   }
 
   .home-hero h1 {
@@ -36,6 +83,14 @@ layout: default
     font-size: clamp(2rem, 4.5vw, 3rem);
     line-height: 1.1;
     letter-spacing: -0.02em;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(105deg, #1e2a5f 0%, #2e3d82 42%, #4a54b9 70%, #2f8aa2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 26px rgba(86, 110, 220, 0.12);
+    animation: heroGlowPulse 4.8s ease-in-out infinite;
   }
 
   .home-hero .subtitle {
@@ -44,22 +99,167 @@ layout: default
     font-size: 1.08rem;
     max-width: 48ch;
     white-space: pre-line;
+    position: relative;
+    z-index: 1;
   }
 
-  .home-tagline {
-    margin-top: 1.2rem;
-    color: #6a7086;
-    font-size: 0.95rem;
+  .home-hero-layout {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(180px, 0.92fr);
+    align-items: start;
+    gap: 0.62rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .home-hero-copy {
+    min-width: 0;
+    padding-right: 0;
+  }
+
+  .hero-sudoku {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-width: 230px;
+    border: 1px solid rgba(111, 126, 220, 0.35);
+    border-radius: 12px;
+    padding: 0.62rem;
+    background: rgba(255, 255, 255, 0.64);
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    grid-template-areas:
+      "title title"
+      "hint hint"
+      "grid actions"
+      "grid status";
+    column-gap: 0.6rem;
+    row-gap: 0.34rem;
+    align-items: start;
+  }
+
+  .hero-sudoku h3 {
+    grid-area: title;
+    margin: 0;
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #394272;
+  }
+
+  .hero-sudoku p {
+    grid-area: hint;
+    margin: 0;
+    font-size: 0.66rem;
+    color: #5c6588;
+  }
+
+  .sudoku-grid {
+    grid-area: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.24rem;
+  }
+
+  .sudoku-cell {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    border: 1px solid #c7d0ef;
+    background: #fff;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #2f3a69;
+    padding: 0;
+  }
+
+  .sudoku-cell:focus {
+    outline: none;
+    border-color: #7a88ea;
+    box-shadow: 0 0 0 2px rgba(122, 136, 234, 0.2);
+  }
+
+  .sudoku-cell.fixed {
+    background: #edf1ff;
+    color: #253059;
+    border-color: #b7c2ea;
+  }
+
+  .sudoku-cell.wrong {
+    border-color: #e56767;
+    background: #fff4f4;
+    color: #9f2f2f;
+  }
+
+  .sudoku-actions {
+    grid-area: actions;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.24rem;
+    margin-top: 0;
+    align-self: start;
+  }
+
+  .sudoku-actions button {
+    border: 1px solid #c5ceed;
+    border-radius: 999px;
+    padding: 0.16rem 0.28rem;
+    font-size: 0.63rem;
+    line-height: 1.2;
+    background: #fff;
+    color: #37406f;
+    cursor: pointer;
+  }
+
+  .sudoku-actions button:hover {
+    border-color: #9facdf;
+    background: #f4f7ff;
+  }
+
+  .sudoku-status {
+    grid-area: status;
+    margin: 0;
+    min-height: 1.1em;
+    font-size: 0.64rem;
+    color: #4a5378;
+    align-self: end;
+    text-align: right;
+  }
+
+  @keyframes heroAurora {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    100% {
+      transform: translate3d(-14px, 10px, 0) scale(1.08);
+    }
+  }
+
+  @keyframes heroGlowPulse {
+    0%,
+    100% {
+      text-shadow: 0 0 20px rgba(86, 110, 220, 0.08);
+    }
+    50% {
+      text-shadow: 0 0 28px rgba(86, 110, 220, 0.2);
+    }
   }
 
   .home-gallery {
     border: 1px solid #e8ecf4;
     border-radius: 16px;
-    padding: 1rem 1rem 0.9rem;
+    padding: 0.85rem 0.85rem 0.75rem;
     background: #fff;
     box-shadow: 0 8px 30px rgba(22, 29, 44, 0.04);
     position: sticky;
     top: 1rem;
+    padding-bottom: 0px;
+    
   }
 
   .home-gallery h2 {
@@ -78,14 +278,18 @@ layout: default
   }
 
   .gallery-stage img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
   .gallery-stage img.active {
-    display: block;
+    opacity: 1;
   }
 
   .gallery-btn {
@@ -113,34 +317,40 @@ layout: default
     margin: 0.65rem 0 0;
     color: #4c5368;
     font-size: 0.92rem;
-    min-height: 2.6em;
+    min-height: 2.8em;
+    line-height: 1.4;
   }
 
   .home-right-stack {
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
     height: 100%;
-    grid-template-rows: auto auto 1fr;
+    box-sizing: border-box;
+    padding-bottom: 0;
   }
 
   .home-intro-note {
     border: 1px solid #e9edf3;
     border-radius: 14px;
-    padding: 1.1rem;
+    padding: 1.15rem 1.2rem 0.3rem;
     background: #fff;
     color: #4f566a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .home-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    gap: 0.85rem;
   }
 
   .home-panel {
     border: 1px solid #e9edf3;
     border-radius: 14px;
-    padding: 1.1rem;
+    padding: 0.95rem;
     background: #fff;
   }
 
@@ -227,8 +437,11 @@ layout: default
     border: 1px solid #e8ecf3;
     border-radius: 14px;
     background: linear-gradient(180deg, #ffffff 0%, #fafbfe 100%);
-    padding: 1rem;
-    align-self: end;
+    padding: 0.9rem;
+  }
+
+  .home-contact-row {
+    margin-top: 0.1rem;
   }
 
   .home-contact-grid {
@@ -290,7 +503,32 @@ layout: default
     background: #f7f9ff;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    .home-hero,
+    .home-hero::before,
+    .home-hero::after,
+    .home-hero h1 {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
   @media (max-width: 780px) {
+    .home-hero-layout {
+      display: block;
+    }
+
+    .home-hero-copy {
+      padding-right: 0;
+    }
+
+    .hero-sudoku {
+      position: static;
+      margin-top: 0.7rem;
+      width: auto;
+      max-width: 280px;
+    }
+
     .home-intro-grid {
       grid-template-columns: 1fr;
     }
@@ -345,38 +583,52 @@ layout: default
 
     <div class="home-right-stack">
       <section class="home-hero">
-        <h1>{{ page.hero_title | default: page.title | default: site.title }}</h1>
-        <p class="subtitle">{{ page.subtitle | default: site.description }}</p>
-        <div class="home-tagline">{{ page.tagline | default: "Personal site · Engineering notes · Creative experiments" }}</div>
+        <div class="home-hero-layout">
+          <div class="home-hero-copy">
+            <h1>{{ page.hero_title | default: page.title | default: site.title }}</h1>
+            <p class="subtitle">{{ page.subtitle | default: site.description }}</p>
+          </div>
+
+          <aside class="hero-sudoku" aria-label="Mini Sudoku game">
+            <h3>Mini Sudoku</h3>
+            <p>Fill 1–4, no repeats.</p>
+            <div class="sudoku-grid" id="hero-sudoku-grid"></div>
+            <div class="sudoku-actions">
+              <button type="button" id="hero-sudoku-check">Check</button>
+              <button type="button" id="hero-sudoku-reset">Reset</button>
+            </div>
+            <p class="sudoku-status" id="hero-sudoku-status"></p>
+          </aside>
+        </div>
       </section>
 
       <section class="home-intro-note">
         {{ content }}
       </section>
+    </div>
+  </section>
 
-      <section class="home-contact">
-        <div class="home-contact-grid">
-          <div class="home-contact-photo">
-            <img src="{{ site.footer_photo | default: '/assets/images/footer-photo.svg' | relative_url }}" alt="{{ site.title | escape }} profile photo" />
-          </div>
-          <div>
-            <h2>Let’s connect</h2>
-            <p>Feel free to reach out for collaboration, ideas, or just a friendly hello.</p>
-            <ul class="home-contact-links">
-              {%- if site.email -%}
-                <li><a href="mailto:{{ site.email }}">Email</a></li>
-              {%- endif -%}
-              {%- if site.github_username -%}
-                <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              {%- endif -%}
-              {%- if site.twitter_username -%}
-                <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
-              {%- endif -%}
-              <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <section class="home-contact home-contact-row">
+    <div class="home-contact-grid">
+      <div class="home-contact-photo">
+        <img src="{{ site.footer_photo | default: '/assets/images/footer-photo.svg' | relative_url }}" alt="{{ site.title | escape }} profile photo" />
+      </div>
+      <div>
+        <h2>Let’s connect</h2>
+        <p>Feel free to reach out for collaboration, ideas, or just a friendly hello.</p>
+        <ul class="home-contact-links">
+          {%- if site.email -%}
+            <li><a href="mailto:{{ site.email }}">Email</a></li>
+          {%- endif -%}
+          {%- if site.github_username -%}
+            <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          {%- endif -%}
+          {%- if site.twitter_username -%}
+            <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+          {%- endif -%}
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -443,12 +695,30 @@ layout: default
 
     var current = 0;
 
+    function lockCaptionHeight() {
+      var original = caption.textContent;
+      var maxHeight = 0;
+
+      images.forEach(function (img) {
+        caption.textContent = img.dataset.caption || '';
+        maxHeight = Math.max(maxHeight, caption.offsetHeight);
+      });
+
+      caption.textContent = original;
+
+      if (maxHeight > 0) {
+        caption.style.height = maxHeight + 'px';
+      }
+    }
+
     function show(index) {
       images[current].classList.remove('active');
       current = (index + images.length) % images.length;
       images[current].classList.add('active');
       caption.textContent = images[current].dataset.caption || '';
     }
+
+    lockCaptionHeight();
 
     prevBtn.addEventListener('click', function () {
       show(current - 1);
@@ -457,5 +727,93 @@ layout: default
     nextBtn.addEventListener('click', function () {
       show(current + 1);
     });
+
+    window.addEventListener('resize', lockCaptionHeight);
+  })();
+
+  (function () {
+    var grid = document.getElementById('hero-sudoku-grid');
+    var checkBtn = document.getElementById('hero-sudoku-check');
+    var resetBtn = document.getElementById('hero-sudoku-reset');
+    var status = document.getElementById('hero-sudoku-status');
+
+    if (!grid || !checkBtn || !resetBtn || !status) return;
+
+    var puzzle = [1, 0, 3, 0, 0, 4, 0, 2, 2, 0, 4, 0, 0, 3, 0, 1];
+    var solution = [1, 2, 3, 4, 3, 4, 1, 2, 2, 1, 4, 3, 4, 3, 2, 1];
+    var cells = [];
+
+    function render() {
+      grid.innerHTML = '';
+      cells = [];
+
+      puzzle.forEach(function (value, idx) {
+        var input = document.createElement('input');
+        input.className = 'sudoku-cell' + (value ? ' fixed' : '');
+        input.type = 'text';
+        input.inputMode = 'numeric';
+        input.maxLength = 1;
+        input.dataset.index = String(idx);
+
+        if (value) {
+          input.value = String(value);
+          input.readOnly = true;
+          input.tabIndex = -1;
+        } else {
+          input.addEventListener('input', function () {
+            this.value = this.value.replace(/[^1-4]/g, '').slice(0, 1);
+            this.classList.remove('wrong');
+            status.textContent = '';
+          });
+        }
+
+        grid.appendChild(input);
+        cells.push(input);
+      });
+    }
+
+    function reset() {
+      render();
+      status.textContent = '';
+    }
+
+    function check() {
+      var hasEmpty = false;
+      var hasWrong = false;
+
+      cells.forEach(function (cell, idx) {
+        if (cell.readOnly) return;
+
+        var val = Number(cell.value);
+        if (!val) {
+          hasEmpty = true;
+          cell.classList.remove('wrong');
+          return;
+        }
+
+        if (val !== solution[idx]) {
+          hasWrong = true;
+          cell.classList.add('wrong');
+        } else {
+          cell.classList.remove('wrong');
+        }
+      });
+
+      if (hasWrong) {
+        status.textContent = 'Not quite. Try again ✨';
+        return;
+      }
+
+      if (hasEmpty) {
+        status.textContent = 'Keep going — almost there.';
+        return;
+      }
+
+      status.textContent = 'Solved! 👑';
+    }
+
+    checkBtn.addEventListener('click', check);
+    resetBtn.addEventListener('click', reset);
+    render();
   })();
 </script>
