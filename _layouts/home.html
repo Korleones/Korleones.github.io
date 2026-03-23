@@ -253,21 +253,36 @@ layout: default
   }
 
   .home-gallery {
-    border: 1px solid #e8ecf4;
+    border: 1px solid #dce5f3;
     border-radius: 16px;
-    padding: 0.85rem 0.85rem 0.75rem;
-    background: #fff;
-    box-shadow: 0 8px 30px rgba(22, 29, 44, 0.04);
+    padding: 1rem 1rem 0.85rem;
+    background:
+      radial-gradient(120% 140% at 100% 0%, rgba(99, 118, 255, 0.35) 0%, rgba(99, 118, 255, 0.12) 28%, rgba(99, 118, 255, 0) 58%),
+      radial-gradient(90% 110% at -10% 100%, rgba(147, 112, 219, 0.22) 0%, rgba(147, 112, 219, 0) 55%),
+      linear-gradient(140deg, #faf9ff 0%, #f5f3ff 46%, #ffffff 100%);
+    box-shadow: 
+      0 4px 16px rgba(66, 89, 153, 0.08),
+      0 12px 32px rgba(47, 64, 132, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
     position: sticky;
     top: 1rem;
-    padding-bottom: 0px;
-    
+    transition: all 0.3s ease;
+  }
+
+  .home-gallery:hover {
+    border-color: #d5e3f5;
+    box-shadow:
+      0 6px 20px rgba(66, 89, 153, 0.1),
+      0 16px 40px rgba(47, 64, 132, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
   }
 
   .home-gallery h2 {
-    margin-bottom: 0.75rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.85rem;
+    font-size: 1.15rem;
     letter-spacing: 0.01em;
+    color: #1f2952;
+    font-weight: 600;
   }
 
   .gallery-stage {
@@ -276,7 +291,12 @@ layout: default
     aspect-ratio: 4 / 5;
     border-radius: 12px;
     overflow: hidden;
-    background: #f2f5fb;
+    background: #fff;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  }
+
+  .gallery-stage::before {
+    display: none;
   }
 
   .gallery-stage img {
@@ -287,11 +307,22 @@ layout: default
     object-fit: cover;
     display: block;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.4s ease;
+    z-index: 1;
   }
 
   .gallery-stage img.active {
     opacity: 1;
+    animation: galleryFadeIn 0.4s ease;
+  }
+
+  @keyframes galleryFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .gallery-btn {
@@ -302,9 +333,21 @@ layout: default
     height: 2.2rem;
     border: 0;
     border-radius: 999px;
-    background: rgba(18, 23, 33, 0.52);
+    background: rgba(31, 41, 82, 0.65);
     color: #fff;
     cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-btn:hover {
+    background: rgba(31, 41, 82, 0.85);
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 8px 16px rgba(31, 41, 82, 0.25);
   }
 
   .gallery-btn.prev {
@@ -316,11 +359,12 @@ layout: default
   }
 
   .gallery-caption {
-    margin: 0.65rem 0 0;
-    color: #4c5368;
-    font-size: 0.92rem;
+    margin: 0.75rem 0 0;
+    color: #3f4a68;
+    font-size: 0.94rem;
     min-height: 2.8em;
-    line-height: 1.4;
+    line-height: 1.5;
+    font-weight: 500;
   }
 
   .home-right-stack {
