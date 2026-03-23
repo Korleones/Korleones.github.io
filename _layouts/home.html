@@ -124,6 +124,7 @@ layout: default
     right: auto;
     width: 100%;
     max-width: 230px;
+    margin-left: -25px;
     border: 1px solid rgba(111, 126, 220, 0.35);
     border-radius: 12px;
     padding: 0.62rem;
@@ -163,6 +164,7 @@ layout: default
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.24rem;
+    margin-bottom: 4px;
   }
 
   .sudoku-cell {
@@ -805,7 +807,7 @@ layout: default
       }
 
       if (hasEmpty) {
-        status.textContent = 'Keep going — almost there.';
+        status.textContent = 'Keep going! ✨';
         return;
       }
 
