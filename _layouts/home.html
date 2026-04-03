@@ -555,17 +555,20 @@ layout: default
 
   .home-contact-photo {
     width: 88px;
-    height: 88px;
+    height: 100px;
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid #e4e9f3;
-    background: #eef3ff;
+    background: white;
   }
 
   .home-contact-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%;
+    transform: scale(0.86);
+    transform-origin: center;
     display: block;
   }
 
@@ -578,6 +581,13 @@ layout: default
     margin: 0.35rem 0 0;
     color: #5a637d;
     font-size: 0.92rem;
+  }
+
+  .home-contact-email {
+    margin: 0.55rem 0 0;
+    color: #2f3750;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   .home-contact-links {
@@ -727,17 +737,16 @@ layout: default
       <div>
         <h2>Let’s connect</h2>
         <p>Feel free to reach out for collaboration, ideas, or just a friendly hello.</p>
+        <p class="home-contact-email">dikan@duck.com</p>
         <ul class="home-contact-links">
-          {%- if site.email -%}
-            <li><a href="mailto:{{ site.email }}">Email</a></li>
-          {%- endif -%}
-          {%- if site.github_username -%}
-            <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://github.com/Korleones" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://dev.to/korleones" target="_blank" rel="noopener noreferrer">DEV</a></li>
+          {%- if site.instagram_username -%}
+            <li><a href="https://instagram.com/{{ site.instagram_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           {%- endif -%}
           {%- if site.twitter_username -%}
             <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
           {%- endif -%}
-          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
         </ul>
       </div>
     </div>
@@ -788,7 +797,6 @@ layout: default
   <section>
     <h2>Quick Links</h2>
     <div class="home-links">
-      <a href="{{ "/about/" | relative_url }}">About Me</a>
       <a href="{{ "/works/" | relative_url }}">My Works</a>
       <a href="{{ "/blog/" | relative_url }}">All Blog Posts</a>
     </div>

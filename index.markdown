@@ -28,20 +28,24 @@ selected_works:
     description: "A clean list of all posts with date-first reading flow."
     url: /blog/
 now:
-  - "Designing this homepage with a cleaner editorial style."
-  - "Collecting project ideas for small game and tooling experiments."
-  - "Writing short technical notes every week."
+  - "Designing this homepage with a cleaner editorial style.😘"
+  - "Building a website for a startup🫆"
+  - "Learning French, Economics, Cantonese; Gyming; Decorating my new home!💪"
+  - "Trying to find a job!😳"
+  - "Writing journals!☺️"
+  - "Learning Kali Linux to be a good hacker😈"
+
 now_footer: "Always learning, always shipping small things."
 gallery_images:
+  - src: /assets/images/1b253dc73f8d31093d421111177677d4.JPG
+    alt: Personal photo 3
+    caption: "In Blue Mountains, Sydney"
   - src: /assets/images/IMG_6255.JPG
     alt: Personal photo 1
     caption: "Casual snapshot."
   - src: /assets/images/0f9c2ed025204e88405055a9826a0164.JPG
     alt: Personal photo 2
     caption: "Hiking on the glacier in New Zealand"
-  - src: /assets/images/1b253dc73f8d31093d421111177677d4.JPG
-    alt: Personal photo 3
-    caption: "In Blue Mountains, Sydney"
 ---
 Welcome to my personal website. I use this space:
 - To share Life stories and experiences 🤣
