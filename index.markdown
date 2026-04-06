@@ -14,6 +14,8 @@ subtitle: |
 gallery_title: "My Photos"
 works_title: "Selected Works"
 status_title: "Now"
+cv_label: "View CV"
+cv_url: "/assets/files/Di-CV.pdf"
 selected_works:
   - name: "Language Exchange Notes"
     description: "A lightweight note system for daily speaking practice and reflection."
